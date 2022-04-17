@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 03</title>
+<!--
+EXERCICIO 03 - LISTA DE FRUTAS
+1. O site deve apresentar um prompt solicitando uma lista de frutas separadas por
+vírgula
+2. O usuário informa várias frutas no mesmo input (considere que o usuário vai
+informar os itens sem espaços entre eles)
+3. Deve ser exibido no documento:
+○ Se a palavra banana é uma das frutas
+○ A mesma lista inserida pelo usuário, porém substituindo banana por mamão
+○ A mesma lista inserida pelo usuário, porém removendo a palavra morango 
+-->
+</head>
+<body>
+    <script>
+        const ListaFrutas = prompt('Por gentileza, informe 5 frutas: ');
+        const banana = 'banana'
+        const positionBanana = ListaFrutas.indexOf(banana)
+
+        document.write(`<h1> ${ListaFrutas}</h1>`)
+        document.write(`<p>${positionBanana != -1? "Possui banana na lista" : "Não possui banana na lista"}</p>`)
+        document.write(`<p>${ListaFrutas.replace ('banana' , 'mamão')}</p>`)
+        document.write(`<p>${ListaFrutas.replaceAll('morango' , '')}</p>`)
+
+    </script>
+</body>
+</html>

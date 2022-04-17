@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 02</title>
+<!-- 
+EXERCÍCIO 02 - BRINCANDO COM NOMES
+1. O site deve apresentar um prompt solicitando o nome do usuário
+2. O usuário informa o nome
+3. O site deve apresentar um prompt solicitando o sobrenome do usuário
+4. O usuário informa o sobrenome
+5. Deve ser exibido no documento:
+○ O nome completo do usuário
+○ O número de caracteres do nome completo
+○ O nome completo com todas as letras maiúsculas
+○ O nome completo com todas as letras minúsculas 
+-->
+</head>
+<body>
+    <script>
+        const userName = prompt('Por favor, informe seu nome: ');
+        const userMiddleName = prompt('Informe seu sobrenome: ');
+
+        const completeName = `${userName} ${userMiddleName}`;
+
+        document.write(`<h1>${completeName}</h1>`);
+        document.write(`<h1>${completeName.length}</h1>`);
+        document.write(`<h1>${completeName.toUpperCase()}</h1>`);
+        document.write(`<h1>${completeName.toLowerCase()}</h1>`);
+
+    </script>
+</body>
+</html>

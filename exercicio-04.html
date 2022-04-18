@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 04</title>
+<!-- 
+EXERCÍCIO 04 - CALCULADORA DE INTEIROS
+1. O site deve apresentar 4 vezes um prompt solicitando a inserção de um número
+2. Para cada vez, o usuário deve inserir um número
+3. Cada número deve ser forçado para ser inteiro
+4. Se um dos valores não for um número, deve exibir uma mensagem de erro no
+documento
+5. Deve ser exibido no documento:
+○ A soma dos 4 números
+○ A média dos 4 números                 
+ -->                    
+</head>                 
+<body>                  
+    <script>
+        const n1 = parseInt( prompt('Por favor, informe um número: '));
+        const n2 = parseInt(prompt('Por favor, informe um número: '));
+        const n3 = parseInt( prompt('Por favor, informe um número: '));
+        const n4 = parseInt(prompt('Por favor, informe um número: '));
+
+        if (Number.isNaN(n1) || Number.isNaN(n2) || Number.isNaN(n3) || Number.isNaN(n4)) {
+            document.write('Valores informados inválidos. Tente novamente!')
+        } else {
+            document.write('Todos os valores digitados são números.')
+            document.write(`<p>${'A soma de todos os número é ' + (n1 + n2 + n3 + n4)}</p>`)
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 08</title>
+<!-- 
+EXERCICIO 08 - PROMP DA SORTE
+1. Crie um array com 10 strings onde cada item é um prêmio;
+2. Exiba um prompt perguntando um número de 1 a 10 ao usuário;
+3. Exiba o prêmio que ele ganhou com base no número que digitou  ~ lembre-se que os
+arrays começam a contar a partir do 0 ~;
+4. Se o número digitado não for válido, exiba uma mensagem de erro.
+ -->
+</head>
+<body>
+    <script>
+        const sorteio = [
+            'Bike', 
+            'PlayStation',
+            'Hoverboard', 
+            'Notebook', 
+            'Barbie', 
+            'Iphone13',
+            'MacBook',
+            'Viagem para a Disney',
+            'Banco Imobiliário',
+            'Slime',];
+        const userChoice = prompt('Informe um número de 1 à 10: ');
+        const resultado = sorteio[userChoice - 1]
+
+        if (!userChoice) {
+            document.write('Insira um número válido')
+        } else {
+            document.write(`<p> Parabéns! Você ganhou ${resultado}</p>`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 07</title>
+<!-- 
+EXERCÍCIO 07 - CONSULTA DE ESTADOS
+1. Crie um objeto onde as chaves são siglas dos estados e os valores são o nome
+completo;
+2. Exiba um prompt perguntando ao usuário a sigla de um estado;
+3. Exiba o nome correspondente a sigla que o usuário digitou;
+4. Se a sigla não existir, exiba uma mensagem de erro.
+ -->
+</head>
+<body>
+    <script>
+        const Brasil = {
+         'AC' : "Acre",
+         'AL' : "Alagoas",
+         'AP' : "Amapá",
+         'AM' : "Amazona",
+         'BA' : "Bahia",	 
+         'CE' : "Ceará",
+         'DF' : "Distrito Federal",
+         'ES' : "Espírito Santo",
+         'GO' : "Goiás",
+         'MA' : "Maranhão",
+         'MT' : "Mato Grosso",
+         'MS' : "Mato Grosso do Sul",
+         'MG' : "Minas Gerais",
+         'PA' : "Pará",
+         'PB' : "Paraíba",
+         'PR' : "Paraná",
+         'PE' : "Pernambuco",
+         'PI' : "Piauí",
+         'RJ' : "Rio de Janeiro",
+         'RO' : "Rondônia",
+         'RN' : "Rio Grande do Norte",
+         'RS' : "Rio Grande do Sul",
+         'RR' : "Roraima",
+         'SC' : "Santa Catarina",
+         'SP' : "São Paulo",
+         'SE' : "Sergipe",
+         'TO' : "Tocantins",
+        };
+        const userChoice = prompt('Informe a sigla de um Estado Federativo: ');
+        const verificacao = Brasil[userChoice]
+
+        if(!userChoice) {
+            document.write("Sigla inválida")
+        } else {
+            document.write(`<p>A sigla informada refere-se ao estado ${verificacao}</p>`)
+        }
+    </script>
+</body>
+</html>

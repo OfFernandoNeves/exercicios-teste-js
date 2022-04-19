@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 06</title>
+<!-- 
+EXERCICIO 06 - CONVERSOR DE MOEDAS
+1. Considere que 1 dólar é R$ 5,50 e 1 euro é R$6,30;
+2. O site deve apresentar um prompt solicitando a inserção de um valor em reais
+(podendo ser decimal ou inteiro, de acordo com o que o usuário digitou)
+3. O usuário deve inserir um número
+4. Se o valor não for um número, deve exibir uma mensagem de erro no documento
+5. Deve ser exibido no documento:
+○ O valor digitado em dólares
+○ O valor digitado em euros
+ -->
+</head>
+<body>
+    <script>
+        const vlrReais = parseFloat(prompt('Por favor, informe um valor em reais: '));
+
+        if (Number.isNaN(vlrReais)) {
+            document.write(`<p>'O valor informado é incorreto. Tente novamente'</p>`)
+        } else {
+            document.write(`<h3>${'O valor R$' + vlrReais + ' reais equivale à USD$' + (vlrReais / 5.50).toFixed(3) + ' dólares.'}</h3>`);
+            document.write(`<h3>${'O valor R$' + vlrReais + ' reais equivale à EUR' + (vlrReais / 6.3).toFixed(3) + ' euros.'}</h3>`)
+        }
+        
+    </script>
+</body>
+</html>

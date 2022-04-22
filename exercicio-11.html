@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 11</title>
+<!-- 
+Exercício 11 - Contador
+1. Exiba um prompt perguntando até que número deseja contar;
+2. Se o número digitado não for válido, exiba uma mensagem de erro;
+3. Exiba um contador de 0 até o número que o usuário digitou;
+4. Exiba um contador do número que o usuário digitou até o 0;
+5. Veja o que acontece se o usuário digitar um número negativo;
+6. Para evitar o loop infinito faça um if para verificar se o número digitado é menor que
+0.
+ -->
+</head>
+<body>
+    <script>
+        const userChoice = prompt('Por favor, escolha até que número deseja contar:  ')
+        numberChoiced = parseInt(userChoice)
+        if (isNaN(numberChoiced) || numberChoiced < 0) {
+            document.write('<h2>Número informado inválido. <br> Tente novamente.</p>')
+        } else {
+            for (let contador = 0; contador <= numberChoiced; contador++) {
+                document.write(`<p>${contador}</p>`)
+            }
+            for (let contador = numberChoiced; contador >= 0; contador--) {
+                document.write(`<p>${contador}</p>`)
+            }
+            }
+    </script>
+</body>
+</html>

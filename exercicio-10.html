@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 10</title>
+<!-- 
+Exercício 10 - Gerador de número mínimo
+1. Exiba um prompt perguntando um valor mínimo entre 0 e 1;
+2. Se o número digitado não for válido, exiba uma mensagem de erro;
+3. Gere um número aleatório entre 0 e 1 até o número gerado ser maior que o mínimo
+utilize do while;
+4. Veja o que acontece se o usuário digitar um número maior que 1;
+5. Para evitar o loop infinito faça um if para verificar se o valor mínimo é menor que 1.
+ -->
+</head>
+<body>
+    <script>
+        const userChoice = prompt('Informe um número entre 0 e 1: ')
+        const numberChoiced = parseFloat(userChoice)
+        if (isNaN(numberChoiced) || numberChoiced < 0 || numberChoiced > 1) {
+            document.write('Número inválido. Tente novamente.')
+        } else {
+            let randomNumber
+            do {
+                randomNumber = Math.random()
+                document.write(`<P>${randomNumber}</p>`)
+            } while ( randomNumber < numberChoiced);
+
+            
+        }
+            
+    </script>
+</body>
+</html>

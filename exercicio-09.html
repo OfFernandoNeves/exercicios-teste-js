@@ -18,7 +18,16 @@ um número maior que 0.
 </head>
 <body>
     <script>
-        const sorteio = prompt('Informe quantos números você deseja sortear: ')
+        alert('Vamos brincar de Mega Sena?')
+        let sorteio = prompt('Informe quantos números você deseja sortear: ')
+        const numero = parseInt(sorteio)
+        if (isNaN(numero) || numero <= 0) {
+            document.write('<h2>Erro! Número inválido. Tente novamente.</h2>')
+        } else {
+                for(let contador = 1; contador <= sorteio; contador++) {
+                    document.write(`<p>${contador} : ${Math.random().toFixed(2)}</p>`)
+                }
+            }
     </script>
 </body>
 </html>
